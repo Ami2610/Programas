@@ -7,8 +7,8 @@
 # ### Ejercicio 2
 # Escribir un programa que almacene la cadena ¡Hola Mundo! en una variable y luego muestre por pantalla el contenido de la variable.
 '''
-cadenaHolaMundo = "¡Hola Mundo!"
-print(cadenaHolaMundo)
+cadena_hola_mundo = "¡Hola Mundo!"
+print(cadena_hola_mundo)
 '''
 
 # ### Ejercicio 3
@@ -17,15 +17,15 @@ Escribir un programa que pregunte el nombre del usuario en la consola y después
 pantalla la cadena ¡Hola <nombre>!, donde <nombre> es el nombre que el usuario haya introducido.
 '''
 '''
-nombreUsuario = str(input("Ingrese su nombre: "))
-print("Hola ", nombreUsuario)
+nombre_usuario = str(input("Ingrese su nombre: "))
+print("Hola ", nombre_usuario)
 '''
 
 # ### Ejercicio 4
 # Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética.
 '''
-resultadoOperacion = ((3+2) / (2*5)) **2
-print(resultadoOperacion)
+resultado_operacion = ((3+2) / (2*5)) **2
+print(resultado_operacion)
 '''
 
 # ### Ejercicio 5
@@ -34,10 +34,10 @@ Escribir un programa que pregunte al usuario por el número de horas trabajadas 
 Después debe mostrar por pantalla la paga que le corresponde.
 '''
 '''
-numeroHoras = int(input("Ingrese el número de horas trabajadas: \n"))
-valorPorHora = float(input("Ingrese $ por hora: \n"))
-pagaTotal = numeroHoras * valorPorHora
-print("La paga es: \n", pagaTotal)
+numero_horas = int(input("Ingrese el número de horas trabajadas: \n"))
+valor_por_hora = float(input("Ingrese $ por hora: \n"))
+paga_total = numero_horas * valor_por_hora
+print("La paga es: \n", paga_total)
 '''
 
 # ### Ejercicio 6
@@ -82,9 +82,9 @@ capital obtenido en la inversión.
 '''
 '''
 inversion = float(input("Ingrese el valor a invertir: "))
-interesAnual = float(input("Ingrese el interés porcentual anual: "))
+interes_anual = float(input("Ingrese el interés porcentual anual: "))
 años = int(input("Ingrese los años: "))
-print("Capital final: " + str(round(inversion * (interesAnual / 100 + 1) ** años, 2)))
+print("Capital final: " + str(round(inversion * (interes_anual / 100 + 1) ** años, 2)))
 '''
 
 # ### Ejercicio 10
@@ -95,12 +95,12 @@ payaso pesa 112 g y cada muñeca 75 g. Escribir un programa que lea el número d
 calcule el peso total del paquete que será enviado.
 '''
 '''
-pesoPayaso = 112
-pesoMuñeca = 75
+peso_payaso = 112
+peso_muñeca = 75
 payasos = int(input("Ingrese cuantos payasos se enviaran: "))
 muñecas = int(input("Ingrese cuantas muñecas se enviaran: "))
-pesoTotal = pesoPayaso * payasos + pesoMuñeca * muñecas
-print("El peso total del paquete es: " + str(pesoTotal) + " g")
+peso_total = peso_payaso * payasos + peso_muñeca * muñecas
+print("El peso total del paquete es: " + str(peso_total) + " g")
 '''
 
 # ### Ejercicio 11
@@ -111,14 +111,14 @@ de dinero depositada en la cuenta de ahorros, introducida por el usuario. Despu�
 cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
 '''
 '''
-cuentaAhorros = float(input("Ingrese el valor a depositar: "))
+cuenta_ahorros = float(input("Ingrese el valor a depositar: "))
 interes = 0.04
-balanceAño1 = cuentaAhorros * (1 + interes)
-print("El balance después del primer año: " + str(round(balanceAño1, 2)))
-balanceAño2 = balanceAño1 *  (1 + interes)
-print("El balance después del segundo año: " + str(round(balanceAño2, 2)))
-balanceAño3 = balanceAño2 * (1 + interes)
-print("El balance después del tercer año: " + str(round(balanceAño3, 2)))
+balance_año1 = cuenta_ahorros * (1 + interes)
+print("El balance después del primer año: " + str(round(balance_año1, 2)))
+balance_año2 = balance_año1 *  (1 + interes)
+print("El balance después del segundo año: " + str(round(balance_año2, 2)))
+balance_año3 = balance_año2 * (1 + interes)
+print("El balance después del tercer año: " + str(round(balance_año3, 2)))
 '''
 
 # ### Ejercicio 12
@@ -128,11 +128,11 @@ leyendo el número de barras vendidas que no son del día. Después el programa 
 descuento que se le hace por no ser fresca y el coste final total.
 '''
 '''
-barrasAntiguas = int(input("Ingrese la cantidad de barras de pan antiguas vendidas: "))
-precioHabitual = 3.49
+barras_antiguas = int(input("Ingrese la cantidad de barras de pan antiguas vendidas: "))
+precio_habitual = 3.49
 descuento = 0.60
-precioDescuento = barrasAntiguas * precioHabitual * (1 - descuento)
-print("Precio habitual de la barra de pan: " + str(precioHabitual) + "$")
+precio_descuento = barras_antiguas * precio_habitual * (1 - descuento)
+print("Precio habitual de la barra de pan: " + str(precio_habitual) + "$")
 print("Descuento: " + str(descuento * 100) + "%")
-print("Precio final: " + str(round(precioDescuento, 2)) + "$")
+print("Precio final: " + str(round(precio_descuento, 2)) + "$")
 '''
