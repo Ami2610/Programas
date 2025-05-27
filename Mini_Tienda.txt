@@ -1,0 +1,34 @@
+#  “Mini tienda: cálculo de ventas y salud”
+
+nombre = str(input("Ingrese su nombre: "))
+print("¡Hola", nombre + "!")
+print()
+
+peso = float(input("Ingrese su peso (en kg): "))
+altura = float(input("Ingrese su altura (en m): "))
+imc = round((peso / altura ** 2), 2)
+print("Tu índice de masa corporal es: " + str(imc))
+print()
+
+barras_antiguas = int(input("Ingrese la cantidad de barras de pan antiguas vendidas: "))
+precio_habitual = 3.49
+descuento = 0.60
+descuento_por_barra = precio_habitual * descuento
+precio_descuento = barras_antiguas * (precio_habitual - descuento_por_barra)
+print("Precio habitual de la barra de pan: $" + str(precio_habitual))
+print("Descuento por barra: $" + str(round(descuento_por_barra, 2)))
+print("Precio final: $" + str(round(precio_descuento, 2)))
+print()
+
+valor_depositado = float(input("Ingrese el valor depositado: $"))
+print("Has depositado $", str(round(valor_depositado, 2)), "en tu cuenta de ahorros.")
+interes = 0.04
+balance_año1 = valor_depositado * (1 + interes)
+print("Saldo después del primer año: $" + str(round(balance_año1, 2)))
+balance_año2 = balance_año1 *  (1 + interes)
+print("Saldo después del segundo año: $" + str(round(balance_año2, 2)))
+balance_año3 = balance_año2 * (1 + interes)
+print("Saldo después del tercer año: $" + str(round(balance_año3, 2)))
+print()
+
+print("¡Gracias por usar el sistema!")
