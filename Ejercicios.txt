@@ -1,15 +1,16 @@
 # ### Ejercicio 1
 # Escribir un programa que muestre por pantalla la cadena ¡Hola Mundo!.
 
-# print("Hola Mundo")
+# print("Hola Mundo")  # Imprime el texto "Hola Mundo"
 
 
 # ### Ejercicio 2
 # Escribir un programa que almacene la cadena ¡Hola Mundo! en una variable y luego muestre por pantalla el contenido de la variable.
 '''
-cadena_hola_mundo = "¡Hola Mundo!"
-print(cadena_hola_mundo)
+cadena_hola_mundo = "¡Hola Mundo!"  # Guarda el mensaje en una variable
+print(cadena_hola_mundo)  # Muestra el contenido de la variable
 '''
+
 
 # ### Ejercicio 3
 '''
@@ -17,16 +18,18 @@ Escribir un programa que pregunte el nombre del usuario en la consola y después
 pantalla la cadena ¡Hola <nombre>!, donde <nombre> es el nombre que el usuario haya introducido.
 '''
 '''
-nombre_usuario = str(input("Ingrese su nombre: "))
-print("Hola ", nombre_usuario)
+nombre_usuario = str(input("Ingrese su nombre: "))  # Pide al usuario que escriba su nombre
+print("Hola ", nombre_usuario)  # Saluda al usuario con su nombre
 '''
+
 
 # ### Ejercicio 4
 # Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética.
 '''
-resultado_operacion = ((3+2) / (2*5)) **2
-print(resultado_operacion)
+resultado_operacion = ((3+2) / (2*5)) **2  # Realiza una operación matemática y guarda el resultado
+print(resultado_operacion)  # Muestra el resultado de la operación
 '''
+
 
 # ### Ejercicio 5
 '''
@@ -34,11 +37,12 @@ Escribir un programa que pregunte al usuario por el número de horas trabajadas 
 Después debe mostrar por pantalla la paga que le corresponde.
 '''
 '''
-numero_horas = int(input("Ingrese el número de horas trabajadas: \n"))
-valor_por_hora = float(input("Ingrese $ por hora: \n"))
-paga_total = numero_horas * valor_por_hora
-print("La paga es: \n", paga_total)
+numero_horas = int(input("Ingrese el número de horas trabajadas: "))  # Pide las horas trabajadas
+valor_por_hora = float(input("Ingrese $ por hora: "))  # Pide cuánto se paga por hora
+paga_total = numero_horas * valor_por_hora  # Calcula la paga total
+print("La paga es: $" + str(paga_total))  # Muestra la paga total
 '''
+
 
 # ### Ejercicio 6
 '''
@@ -46,10 +50,11 @@ Escribir un programa que lea un entero positivo, , introducido por el usuario y 
 enteros desde 1 hasta n. La suma de los primeros enteros positivos puede ser calculada de la siguiente forma: n*(n + 1)/2
 '''
 '''
-numero = int(input("Ingrese un número entero: "))
-suma = numero*(numero + 1)/2
-print("La suma de los primeros números enteros desde 1 hasta " + str(numero) + " es " + str(suma))
+numero = int(input("Ingrese un número entero: "))  # Pide un número entero al usuario
+suma = numero*(numero + 1)/2  # Calcula la suma usando la fórmula matemática
+print("La suma de los primeros números enteros desde 1 hasta " + str(numero) + " es " + str(suma))  # Muestra la suma
 '''
+
 
 # ### Ejercicio 7
 '''
@@ -58,11 +63,12 @@ en una variable, y muestre por pantalla la frase Tu índice de masa corporal es 
 calculado redondeado con dos decimales.
 '''
 '''
-peso = float(input("Ingrese su peso (en kg): "))
-altura = float(input("Ingrese su altura (en m): "))
-imc = round((peso / altura ** 2), 2)
-print("Tu índice de masa corporal es: " + str(imc))
+peso = float(input("Ingrese su peso (en kg): "))  # Pide el peso
+altura = float(input("Ingrese su altura (en m): "))  # Pide la altura
+imc = round((peso / altura ** 2), 2)  # Calcula el IMC y lo redondea a 2 decimales
+print("Tu índice de masa corporal es: " + str(imc))  # Muestra el IMC
 '''
+
 
 # ### Ejercicio 8
 '''
@@ -70,10 +76,11 @@ Escribir un programa que pida al usuario dos números enteros y muestre por pant
 donde <n> y <m> son los números introducidos por el usuario, y <c> y <r> son el cociente y el resto de la división entera respectivamente.
 '''
 '''
-n = int(input("Ingrese el número 1 (dividendo): "))
-m = int(input("Ingrese el número 2 (divisor): "))
-print(str(n) + " entre " +  str(m) + " da un cociente " + str(n // m) + " y un resto " + str(n % m))
+n = int(input("Ingrese el número 1 (dividendo): "))  # Pide el dividendo
+m = int(input("Ingrese el número 2 (divisor): "))  # Pide el divisor
+print(str(n) + " entre " +  str(m) + " da un cociente " + str(n // m) + " y un resto " + str(n % m))  # Muestra cociente y resto
 '''
+
 
 # ### Ejercicio 9
 '''
@@ -81,11 +88,12 @@ Escribir un programa que pregunte al usuario una cantidad a invertir, el interé
 capital obtenido en la inversión.
 '''
 '''
-inversion = float(input("Ingrese el valor a invertir: "))
-interes_anual = float(input("Ingrese el interés porcentual anual: "))
-años = int(input("Ingrese los años: "))
-print("Capital final: " + str(round(inversion * (interes_anual / 100 + 1) ** años, 2)))
+inversion = float(input("Ingrese el valor a invertir: $"))  # Pide la cantidad a invertir
+interes_anual = float(input("Ingrese el interés porcentual anual: "))  # Pide el interés anual
+años = int(input("Ingrese los años: "))  # Pide la cantidad de años
+print("Capital final: $" + str(round(inversion * (interes_anual / 100 + 1) ** años, 2)))  # Calcula y muestra el capital final
 '''
+
 
 # ### Ejercicio 10
 '''
@@ -95,13 +103,14 @@ payaso pesa 112 g y cada muñeca 75 g. Escribir un programa que lea el número d
 calcule el peso total del paquete que será enviado.
 '''
 '''
-peso_payaso = 112
-peso_muñeca = 75
-payasos = int(input("Ingrese cuantos payasos se enviaran: "))
-muñecas = int(input("Ingrese cuantas muñecas se enviaran: "))
-peso_total = peso_payaso * payasos + peso_muñeca * muñecas
-print("El peso total del paquete es: " + str(peso_total) + " g")
+peso_payaso = 112  # Peso por payaso
+peso_muñeca = 75  # Peso por muñeca
+payasos = int(input("Ingrese cuantos payasos se enviaran: "))  # Pide cuántos payasos se enviarán
+muñecas = int(input("Ingrese cuantas muñecas se enviaran: "))  # Pide cuántas muñecas se enviarán
+peso_total = peso_payaso * payasos + peso_muñeca * muñecas  # Calcula el peso total del paquete
+print("El peso total del paquete es: " + str(peso_total) + " g")  # Muestra el peso total
 '''
+
 
 # ### Ejercicio 11
 '''
@@ -111,15 +120,16 @@ de dinero depositada en la cuenta de ahorros, introducida por el usuario. Despu�
 cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
 '''
 '''
-cuenta_ahorros = float(input("Ingrese el valor a depositar: "))
-interes = 0.04
-balance_año1 = cuenta_ahorros * (1 + interes)
-print("El balance después del primer año: " + str(round(balance_año1, 2)))
-balance_año2 = balance_año1 *  (1 + interes)
-print("El balance después del segundo año: " + str(round(balance_año2, 2)))
-balance_año3 = balance_año2 * (1 + interes)
-print("El balance después del tercer año: " + str(round(balance_año3, 2)))
+cuenta_ahorros = float(input("Ingrese el valor a depositar: $"))  # Pide el valor inicial del depósito
+interes = 0.04  # Tasa de interés del 4%
+balance_año1 = cuenta_ahorros * (1 + interes)  # Calcula el saldo tras el primer año
+print("El balance después del primer año: $" + str(round(balance_año1, 2)))  # Muestra saldo año 1
+balance_año2 = balance_año1 *  (1 + interes)  # Calcula saldo tras segundo año
+print("El balance después del segundo año: $" + str(round(balance_año2, 2)))  # Muestra saldo año 2
+balance_año3 = balance_año2 * (1 + interes)  # Calcula saldo tras tercer año
+print("El balance después del tercer año: $" + str(round(balance_año3, 2)))  # Muestra saldo año 3
 '''
+
 
 # ### Ejercicio 12
 '''
@@ -128,11 +138,12 @@ leyendo el número de barras vendidas que no son del día. Después el programa 
 descuento que se le hace por no ser fresca y el coste final total.
 '''
 '''
-barras_antiguas = int(input("Ingrese la cantidad de barras de pan antiguas vendidas: "))
-precio_habitual = 3.49
-descuento = 0.60
-precio_descuento = barras_antiguas * precio_habitual * (1 - descuento)
-print("Precio habitual de la barra de pan: " + str(precio_habitual) + "$")
-print("Descuento: " + str(descuento * 100) + "%")
-print("Precio final: " + str(round(precio_descuento, 2)) + "$")
+barras_antiguas = int(input("Ingrese la cantidad de barras de pan antiguas vendidas: "))  # Pide la cantidad de barras no frescas
+precio_habitual = 3.49  # Precio normal de una barra
+descuento = 0.60  # Descuento del 60%
+descuento_por_barra = precio_habitual * descuento  # Calcula el descuento por barra
+precio_descuento = barras_antiguas * precio_habitual * (1 - descuento)  # Precio final con descuento
+print("Precio habitual de la barra de pan: $" + str(precio_habitual))  # Muestra el precio normal
+print("Descuento por barra: $" + str(round(descuento_por_barra, 2)))  # Muestra el descuento
+print("Precio final: $" + str(round(precio_descuento, 2)))  # Muestra el precio final
 '''
