@@ -31,7 +31,7 @@ print()
 print("Tu índice de masa corporal es: " + str(imc))
 print()
 
-print("Has vendido", barras_antiguas, "barras de pan del d+ia anterior.")
+print("Has vendido", barras_antiguas, "barras de pan del día anterior.")
 print("Precio habitual de la barra de pan: $" + str(precio_habitual))
 print("Descuento por barra: $" + str(round(descuento_por_barra, 2)))
 print("Precio final: $" + str(round(precio_descuento, 2)))

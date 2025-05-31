@@ -87,12 +87,12 @@ print(str(n) + " entre " +  str(m) + " da un cociente " + str(n // m) + " y un r
 Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el número de años, y muestre por pantalla el 
 capital obtenido en la inversión.
 '''
-
+'''
 inversion = float(input("Ingrese el valor a invertir: $"))  # Pide la cantidad a invertir
 interes_anual = float(input("Ingrese el interés porcentual anual: "))  # Pide el interés anual
 años = int(input("Ingrese los años: "))  # Pide la cantidad de años
 print("Capital final: $" + str(round(inversion * (interes_anual / 100 + 1) ** años, 2)))  # Calcula y muestra el capital final
-
+'''
 
 
 # ### Ejercicio 10
