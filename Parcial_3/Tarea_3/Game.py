@@ -30,9 +30,9 @@ class Juego:
         self.enemigo.estado()
 
         turnos = 0  # Contador de turnos
-        # El juego continúa mientras los dos personajes estén vivos y no se excedan los 5 turnos
-        while self.heroe.vida > 0 and self.enemigo.vida > 0 and turnos < 5:
-            print("\n¿Qué deseas hacer?")
+        # El juego continúa mientras los dos personajes estén vivos y no se excedan los 10 turnos
+        while self.heroe.vida > 0 and self.enemigo.vida > 0 and turnos < 10:
+            print("\n¿Qué acción deseas hacer?")
             print("1. Atacar al Monstruo")
             print("2. Usar poción de curación")
             print("3. Usar Hacha mágica")
@@ -61,7 +61,7 @@ class Juego:
             turnos += 1  # Se suma un turno
 
         # Al final del juego, se muestra quién ganó
-        print("\n--- Fin del juego ---")
+        print("\n--- Game Over ---")
         if self.heroe.vida > self.enemigo.vida:
             print(f"¡Has vencido al Monstruo!")
         else:
