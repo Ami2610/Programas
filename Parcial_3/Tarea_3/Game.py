@@ -33,22 +33,22 @@ class Juego:
         # El juego continúa mientras los dos personajes estén vivos y no se excedan los 10 turnos
         while self.heroe.vida > 0 and self.enemigo.vida > 0 and turnos < 10:
             print("\n¿Qué acción deseas hacer?")
-            print("1. Atacar al Monstruo")
-            print("2. Usar poción de curación")
-            print("3. Usar Hacha mágica")
+            print("1. Equipar Hacha mágica")
+            print("2. Atacar al Monstruo")
+            print("3. Tomar poción de curación")
 
             # Solicita al jugador una opción
             opcion = int(input("Selecciona una opción (1-3): "))
 
             # Según la opción elegida, se realiza una acción
             if opcion == 1:
-                self.heroe.atacar(self.enemigo)  # El héroe ataca al enemigo
+                self.arma.usar(self.heroe) # El héroe usa el arma para aumentar su ataque
             elif opcion == 2:
-                self.pocion.usar(self.heroe)     # El héroe usa la poción para curarse
+                self.heroe.atacar(self.enemigo) # El héroe ataca al enemigo
             elif opcion == 3:
-                self.arma.usar(self.heroe)       # El héroe usa el arma para aumentar su ataque
+                self.pocion.usar(self.heroe) # El héroe usa la poción para curarse
             else:
-                print("Opción no válida.")       # Manejo de opciones incorrectas
+                print("Opción no válida.") # Manejo de opciones incorrectas
 
             # Si el enemigo aún está vivo, contraataca
             if self.enemigo.vida > 0:

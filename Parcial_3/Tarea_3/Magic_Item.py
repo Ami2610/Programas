@@ -12,9 +12,9 @@ class MagicItem:
         # Si el tipo es "pocion", se usa para recuperar vida
         if self.tipo == "pocion":
             personaje.vida += self.efecto   # Aumenta la vida del personaje en la cantidad del efecto
-            print(f"{personaje.nombre} usa {self.nombre} y recupera {self.efecto} puntos de vida.")
+            print(f"{personaje.nombre} toma {self.nombre} y recupera {self.efecto} puntos de vida.")
 
-        # Si el tipo es "arma", se usa para aumentar el ataque
+        # Si el tipo es "arma", se usa para aumentar el daño
         elif self.tipo == "arma":
-            personaje.ataque += self.efecto  # Aumenta el ataque del personaje en la cantidad del efecto
-            print(f"{personaje.nombre} equipa {self.nombre} y su ataque aumenta en {self.efecto} puntos.")
+            personaje.daño += self.efecto  # Aumenta el daño del personaje en la cantidad del efecto
+            print(f"{personaje.nombre} equipa {self.nombre} y su daño aumenta en {self.efecto} puntos.")
